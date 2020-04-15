@@ -28,5 +28,10 @@ module.exports = function (config) {
     browsers: ["ChromeHeadless"],
     singleRun: false,
     restartOnFileChange: true,
+    junitReporter: {
+      outputDir: "JUnit",
+      outputFile: "report.xml",
+      useBrowserName: false,
+    },
   });
 };
